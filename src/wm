@@ -1,0 +1,4 @@
+#!/bin/sh
+wmctrl -m \
+| grep -o 'Name: .*' \
+| sed 's/Name: //'
